@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>I love you Cherry</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="scene">
+  <svg viewBox="0 0 400 600" class="bouquet">
+
+    <!-- Bouquet wrap -->
+    <path d="M120 580 L200 420 L280 580 Z" class="wrap"/>
+
+    <!-- Stems -->
+    <line x1="200" y1="420" x2="150" y2="300" class="stem delay1"/>
+    <line x1="200" y1="420" x2="200" y2="270" class="stem delay2"/>
+    <line x1="200" y1="420" x2="250" y2="300" class="stem delay3"/>
+
+    <!-- BLUE ROSE -->
+    <g class="rose blue delay1" transform="translate(150,260)">
+      <path class="petal" d="M0 -18 C14 -18 14 0 0 8 C-14 0 -14 -18 0 -18"/>
+      <path class="petal" d="M-18 0 C-18 14 0 14 8 0 C0 -14 -18 -14 -18 0"/>
+      <path class="petal" d="M18 0 C18 -14 0 -14 -8 0 C0 14 18 14 18 0"/>
+    </g>
+
+    <!-- RED ROSE -->
+    <g class="rose red delay2" transform="translate(200,240)">
+      <path class="petal" d="M0 -20 C16 -20 16 0 0 10 C-16 0 -16 -20 0 -20"/>
+      <path class="petal" d="M-20 0 C-20 16 0 16 10 0 C0 -16 -20 -16 -20 0"/>
+      <path class="petal" d="M20 0 C20 -16 0 -16 -10 0 C0 16 20 16 20 0"/>
+    </g>
+
+    <!-- BLUE ROSE -->
+    <g class="rose blue delay3" transform="translate(250,260)">
+      <path class="petal" d="M0 -18 C14 -18 14 0 0 8 C-14 0 -14 -18 0 -18"/>
+      <path class="petal" d="M-18 0 C-18 14 0 14 8 0 C0 -14 -18 -14 -18 0"/>
+      <path class="petal" d="M18 0 C18 -14 0 -14 -8 0 C0 14 18 14 18 0"/>
+    </g>
+
+  </svg>
+
+  <h1 class="love-text">I love you Cherry 💙❤️</h1>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
