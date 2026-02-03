@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(circle at top, #1b1b2f, #0f0c29);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Georgia', serif;
+}
+
+.scene {
+  text-align: center;
+}
+
+.bouquet {
+  width: 320px;
+  height: auto;
+}
+
+/* Bouquet wrap */
+.wrap {
+  fill: #5a2a2a;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+/* Stems */
+.stem {
+  stroke: #2e8b57;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 150;
+  stroke-dashoffset: 150;
+  animation: grow 2s ease forwards;
+}
+
+.delay1 { animation-delay: 0.5s; }
+.delay2 { animation-delay: 1.2s; }
+.delay3 { animation-delay: 1.9s; }
+
+/* Roses */
+.rose circle {
+  fill-opacity: 0;
+  transform-origin: center;
+  animation: bloom 2s ease forwards;
+}
+
+.rose.blue circle {
+  fill: #4da6ff;
+}
+
+.rose.red circle {
+  fill: #ff4d6d;
+}
+
+.rose.delay1 circle { animation-delay: 2.2s; }
+.rose.delay2 circle { animation-delay: 2.8s; }
+.rose.delay3 circle { animation-delay: 3.4s; }
+
+/* Text */
+.love-text {
+  margin-top: 20px;
+  color: white;
+  font-size: 28px;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+  animation-delay: 4.5s;
+}
+
+/* Animations */
+@keyframes grow {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes bloom {
+  to {
+    r: 22;
+    fill-opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
